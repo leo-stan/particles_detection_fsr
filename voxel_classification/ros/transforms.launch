@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="velodyne_to_voxel_map"
+          args="-10 -10 -2 0 0 0 1 velodyne voxel_map 20"/>
+
+      <node pkg="tf" type="static_transform_publisher" name="velodyne_to_og"
+          args="-15 -15 -1.6 0 0 0 1 velodyne og 20"/>
+</launch>
