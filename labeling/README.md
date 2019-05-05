@@ -10,7 +10,7 @@ The idea of the whole appraoch is that it's easier to manually remove wrongly la
 ## Subtraction
 
 For the background subtraction of the intermediate scans we are not using regular 3D occupancy grids but process each vertical ring of the LiDAR scan separately. For each of them we are filling an angular radial-logarithmic occupancy grid and subtract the associated one of the static scan. This grid contains 900 horizontal angle increments and 20 radial logarithmic increments, see the following Figure for an illustration. 
-![alt text](https://github.com/leo-stan/particles_detection_fsr/imgs/labeling_visualization.png "Labeling Visualization")
+![alt text](../imgs/labeling_visualization.png "Labeling Visualization")
 Each cell is considered as occupied if a LiDAR point falls within its 2D space boundary. By choosing a logarithmic scale along the range dimension, grid entries are enlarging significantly with increasing range accounting for diminishing density, imprecision and noise in the far field which is very advantageous for this labeling task. After subtracting the static of the dynamic grid, their difference reveals the cells that have been occupied by dynamic LiDAR points.
 
 The code for this is given in "1_labeling_apply_occupancy_grid.py"
