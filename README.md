@@ -2,7 +2,7 @@
 
 This repository contains the code for our paper on learning-based particle detection in LiDAR pointclouds.
 
-**Authors:** Leo Stanislas, [Julian Nubert](https://juliannubert.com/), Daniel Dugas, Julia Nitsch, Niko Sünderhauf, Roland Siegwart, Cesar Cadena, Thierry Peynot
+**Authors:** Leo Stanislas*, [Julian Nubert*](https://juliannubert.com/), Daniel Dugas, Julia Nitsch, Niko Sünderhauf, Roland Siegwart, Cesar Cadena, Thierry Peynot
 
 ![title_img](imgs/particle_classification.png)
 
